@@ -1,4 +1,11 @@
 {
   "name": "e-bazary",
-  "packageManager": "yarn@4.18.1"
+  "packageManager": "yarn@4.18.1",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "api": "yarn workspace @e-bazary/api"
+  }
 }
